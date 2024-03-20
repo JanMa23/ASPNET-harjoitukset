@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<MVC_API.Models.CharacterViewModel>
+
+<h1>Charaters</h1>
+
+<p>Index page of character controller</p>
+
+<h2>Characters</h2>
+<table class="table">
+    <th>Name</th>
+    <th>City</th>
+    @foreach (var character in Model)
+    {
+        <tr>
+            <td>@character.name</td>
+            <td>@character.city</td>
+        </tr>
+    }
+
+</table>
+
