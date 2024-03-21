@@ -19,8 +19,8 @@ public class Movie
     [DataType(DataType.Date)]
     public DateTime ReleaseDate { get; set; }
 
-
-    [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
+    // [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
+    [RegularExpression(@"[a-zA-Z\s]*$")]
     [Required]
     [StringLength(30)]
     public string? Genre { get; set; }

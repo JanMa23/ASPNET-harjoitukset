@@ -38,4 +38,6 @@ app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.UseRequestLocalization("fi-FI");
+
 app.Run();
